@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naimul Sarker — AI Engineer & Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">NS<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="assets/Naimul_Sarker_CV.pdf" download class="nav-cta">Download CV</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#skills" onclick="closeMobile()">Skills</a></li>
+      <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
+      <li><a href="#education" onclick="closeMobile()">Education</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+      <li><a href="assets/Naimul_Sarker_CV.pdf" download>Download CV</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="dot"></span> Available for Internship & Projects
+      </div>
+      <h1 class="hero-name reveal-up">
+        Naimul<br /><span class="outline-text">Sarker</span>
+      </h1>
+      <p class="hero-role reveal-up delay-1">
+        <span class="typed" id="typed"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-desc reveal-up delay-2">
+        BSc in CSE student specializing in <strong>Artificial Intelligence</strong> at
+        Daffodil International University.
+      </p>
+      <div class="hero-actions reveal-up delay-3">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Let's Talk →</a>
+      </div>
+      <div class="hero-stats reveal-up delay-4">
+        <div class="stat"><span class="stat-num">5.00</span><span class="stat-label">SSC GPA</span></div>
+        <div class="divider"></div>
+        <div class="stat"><span class="stat-num">5.00</span><span class="stat-label">HSC GPA</span></div>
+        <div class="divider"></div>
+        <div class="stat"><span class="stat-num">AI</span><span class="stat-label">Major Focus</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal-up delay-2">
+      <div class="profile-ring">
+        <div class="profile-img">
+          <img src="images/profile.jpg" alt="Naimul Sarker">
+        </div>
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="orbit-dot"></div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label reveal">01 / About Me</div>
+      <div class="about-grid">
+        <div class="about-text reveal-up">
+          <h2 class="section-title">Crafting the Future<br /><span class="accent">with Intelligence</span></h2>
+          <p>I'm a passionate Computer Science & Engineering student at <strong>Daffodil International University</strong>, majoring in Artificial Intelligence. My academic journey drives me to explore the intersection of human intelligence and machine capability.</p>
+          <p>I believe technology should solve real problems. Whether it's building smart systems, designing efficient algorithms, or collaborating on team projects — I bring dedication and curiosity to everything I work on.</p>
+          <p>When I'm not coding, I'm exploring AI research papers, sharpening problem-solving skills, and contributing to group learning environments.</p>
+          <div class="about-tags">
+            <span>AI / ML</span>
+            <span>Problem Solver</span>
+            <span>Team Player</span>
+            <span>Fast Learner</span>
+          </div>
+        </div>
+        <div class="about-info reveal-up delay-1">
+          <div class="info-card">
+            <div class="info-row">
+              <span class="info-label">Name</span>
+              <span class="info-val">Naimul Sarker</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">University</span>
+              <span class="info-val">Daffodil International University</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Degree</span>
+              <span class="info-val">BSc in CSE (AI Major)</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Nationality</span>
+              <span class="info-val">Bangladeshi</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Languages</span>
+              <span class="info-val">Bangla, English</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Status</span>
+              <span class="info-val available">Open to Opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label reveal">02 / Skills</div>
+      <h2 class="section-title reveal-up">My Toolkit</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal-up">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⟨/⟩</span>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>C Language</span><span>81%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="81"></div></div>
+            </div>
+              <div class="skill-item">
+              <div class="skill-info"><span>C++</span><span>73%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Java</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Python</span><span>77%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="77"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add this inside <div class="skills-grid"> -->
+<div class="skill-category reveal-up delay-4">
+  <div class="skill-cat-header">
+    <span class="skill-cat-icon">🌐</span>
+    <h3>Web & Database</h3>
+  </div>
+  <div class="skill-items">
+    <!-- HTML5 -->
+    <div class="skill-item">
+      <div class="skill-info"><span>HTML5</span><span>80%</span></div>
+      <div class="skill-bar">
+        <div class="skill-fill gradient-bar" data-w="80" style="width: 80%;"></div>
+      </div>
+    </div>
+    <!-- CSS3 -->
+    <div class="skill-item">
+      <div class="skill-info"><span>CSS3</span><span>75%</span></div>
+      <div class="skill-bar">
+        <div class="skill-fill gradient-bar" data-w="75" style="width: 75%;"></div>
+      </div>
+    </div>
+    <!-- SQL -->
+    <div class="skill-item">
+      <div class="skill-info"><span>SQL</span><span>78%</span></div>
+      <div class="skill-bar">
+        <div class="skill-fill gradient-bar" data-w="78" style="width: 68%;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="skill-category reveal-up delay-1">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🧠</span>
+            <h3>AI / Machine Learning</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>AI Fundamentals</span><span>77%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>ML Concepts</span><span>73%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Data Structures</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up delay-2">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🛠</span>
+            <h3>Tools & Others</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>MS Office Suite</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Git & GitHub</span><span>67%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="67"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Problem Solving</span><span>73%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="73"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up delay-3">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🤝</span>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="soft-tags">
+            <span>Communication</span>
+            <span>Teamwork</span>
+            <span>Leadership</span>
+            <span>Critical Thinking</span>
+            <span>Adaptability</span>
+            <span>Time Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label reveal">03 / Projects</div>
+      <h2 class="section-title reveal-up">What I've Built</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured reveal-up">
+          <div class="project-card-inner">
+            <div class="project-num">01</div>
+            <div class="project-top">
+              <span class="project-badge">Featured</span>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub" class="proj-link">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#" aria-label="Live Demo" class="proj-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Library Management System</h3>
+            <p>A comprehensive system to manage books, users, and transactions. Features book search, member registration, borrowing/return tracking, and report generation. Built with clean OOP principles.</p>
+            <div class="project-tech">
+              <span>Java</span><span>OOP</span><span>File I/O</span><span>Data Structures</span>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card reveal-up delay-1">
+          <div class="project-card-inner">
+            <div class="project-num">02</div>
+            <div class="project-top">
+              <span class="project-badge upcoming">Coming Soon</span>
+              <div class="project-links">
+                <a href="#" class="proj-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+              </div>
+            </div>
+            <h3>AI Chatbot Project</h3>
+            <p>An intelligent conversational agent using natural language processing fundamentals. Designed to understand user intent and provide contextual responses.</p>
+            <div class="project-tech">
+              <span>Python</span><span>NLP</span><span>AI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-2">
+          <div class="project-card-inner">
+            <div class="project-num">03</div>
+            <div class="project-top">
+              <span class="project-badge upcoming">Coming Soon</span>
+            </div>
+            <h3>Student Result Portal</h3>
+            <p>A web-based academic result management system where students can view grades, CGPA, and semester-wise performance analytics.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Database</span><span>Web</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-label reveal">04 / Education</div>
+      <h2 class="section-title reveal-up">Academic Journey</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-card">
+            <div class="tl-badge current">Currently Enrolled</div>
+            <h3>BSc in Computer Science & Engineering</h3>
+            <span class="tl-sub">Major in Artificial Intelligence</span>
+            <span class="tl-place">🎓 Daffodil International University</span>
+            <p>Studying core CS fundamentals, AI/ML algorithms, data structures, software engineering, and research methodologies. Actively participating in group projects and collaborative learning.</p>
+            <div class="tl-year">2022 — Present</div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-card">
+            <div class="tl-badge gpa">GPA 5.00 / 5.00</div>
+            <h3>Higher Secondary Certificate (HSC)</h3>
+            <span class="tl-sub">Science Group</span>
+            <span class="tl-place">🏫 Juranpur Adarsha Degree College</span>
+            <p>Achieved perfect GPA in the Science stream, demonstrating strong analytical and academic capabilities.</p>
+            <div class="tl-year">2021</div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-badge gpa">GPA 5.00 / 5.00</div>
+            <h3>Secondary School Certificate (SSC)</h3>
+            <span class="tl-sub">Science Group</span>
+            <span class="tl-place">🏫 Baherchar Fazlul Haque High School</span>
+            <p>Completed secondary education with a perfect GPA, ranking among top students.</p>
+            <div class="tl-year">2019</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-label reveal">05 / Achievements</div>
+      <h2 class="section-title reveal-up">Recognition & Milestones</h2>
+      <div class="achieve-grid">
+        <div class="achieve-card reveal-up">
+          <div class="achieve-icon">🏆</div>
+          <h4>Perfect GPA — SSC</h4>
+          <p>Secured GPA 5.00 out of 5.00 in Secondary School Certificate examination.</p>
+        </div>
+        <div class="achieve-card reveal-up delay-1">
+          <div class="achieve-icon">🎖</div>
+          <h4>Perfect GPA — HSC</h4>
+          <p>Secured GPA 5.00 out of 5.00 in Higher Secondary Certificate examination.</p>
+        </div>
+        <div class="achieve-card reveal-up delay-2">
+          <div class="achieve-icon">🤖</div>
+          <h4>AI Specialization</h4>
+          <p>Pursuing a specialized major in Artificial Intelligence at the undergraduate level.</p>
+        </div>
+        <div class="achieve-card reveal-up delay-3">
+          <div class="achieve-icon">📜</div>
+          <h4>Certifications</h4>
+          <p>Add your online certificates here — Coursera, edX, Google, or Microsoft badges.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label reveal">06 / Contact</div>
+      <h2 class="section-title reveal-up">Let's Connect</h2>
+      <p class="contact-intro reveal-up delay-1">Have a project in mind, an internship opportunity, or just want to say hello? My inbox is always open.</p>
+
+      <div class="contact-wrapper">
+        <div class="contact-info reveal-up">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:naimul@example.com" class="contact-val">sarker23105101219@diu.edu.bd</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+880XXXXXXXXX" class="contact-val">+880 01638649658</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🔗</div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="#" class="contact-val">https://www.linkedin.com/in/sarker-naimul</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💻</div>
+            <div>
+              <span class="contact-label">https://github.com/sarkernaimul1</span>
+              <a href="#" class="contact-val">github.com/naimulsarker</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal-up delay-1" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-w">Send Message →</button>
+          <div class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">NS<span class="accent">.</span></div>
+      <p>Designed & Built by <strong>Naimul Sarker</strong> · BSc CSE, AI Major</p>
+      <p class="footer-copy">© 2025 Naimul Sarker. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
